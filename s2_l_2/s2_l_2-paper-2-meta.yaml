@@ -1,0 +1,19 @@
+# Gesture Recorder Meta File
+
+label: s2_l_2
+gesture: paper
+index: 2
+
+date: 09/08/2020
+time: 10:27:12
+
+arm: 1
+arm_direction: 1
+rssi: -72
+battery_level: 91
+mirror_left_arm: True
+
+files:
+  - s2_l_2-paper-2-pose.csv
+  - s2_l_2-paper-2-orientation.csv
+  - s2_l_2-paper-2-emg.csv

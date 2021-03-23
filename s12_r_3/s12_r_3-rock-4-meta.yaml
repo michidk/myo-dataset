@@ -1,0 +1,18 @@
+# Gesture Recorder Meta File
+
+label: s12_r_3
+gesture: rock
+index: 4
+
+date: 21/08/2020
+time: 13:39:58
+
+arm: 0
+arm_direction: 1
+rssi: -51
+battery_level: 63
+mirror_left_arm: True
+
+files:
+  - s12_r_3-rock-4-orientation.csv
+  - s12_r_3-rock-4-emg.csv

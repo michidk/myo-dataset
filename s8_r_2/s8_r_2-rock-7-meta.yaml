@@ -1,0 +1,18 @@
+# Gesture Recorder Meta File
+
+label: s8_r_2
+gesture: rock
+index: 7
+
+date: 09/08/2020
+time: 10:45:46
+
+arm: 0
+arm_direction: 1
+rssi: -62
+battery_level: 87
+mirror_left_arm: True
+
+files:
+  - s8_r_2-rock-7-orientation.csv
+  - s8_r_2-rock-7-emg.csv

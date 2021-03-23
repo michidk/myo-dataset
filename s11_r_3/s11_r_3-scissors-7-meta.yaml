@@ -1,0 +1,19 @@
+# Gesture Recorder Meta File
+
+label: s11_r_3
+gesture: scissors
+index: 7
+
+date: 21/08/2020
+time: 05:58:41
+
+arm: 0
+arm_direction: 1
+rssi: -57
+battery_level: 96
+mirror_left_arm: True
+
+files:
+  - s11_r_3-scissors-7-pose.csv
+  - s11_r_3-scissors-7-orientation.csv
+  - s11_r_3-scissors-7-emg.csv

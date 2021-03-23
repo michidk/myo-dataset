@@ -1,0 +1,18 @@
+# Gesture Recorder Meta File
+
+label: s7_r_1
+gesture: rock
+index: 0
+
+date: 19/08/2020
+time: 19:27:44
+
+arm: 0
+arm_direction: 1
+rssi: -69
+battery_level: 100
+mirror_left_arm: True
+
+files:
+  - s7_r_1-rock-0-orientation.csv
+  - s7_r_1-rock-0-emg.csv

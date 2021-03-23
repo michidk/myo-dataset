@@ -1,0 +1,18 @@
+# Gesture Recorder Meta File
+
+label: s9_r_2
+gesture: paper
+index: 6
+
+date: 19/08/2020
+time: 14:25:56
+
+arm: 0
+arm_direction: 1
+rssi: -66
+battery_level: 98
+mirror_left_arm: True
+
+files:
+  - s9_r_2-paper-6-orientation.csv
+  - s9_r_2-paper-6-emg.csv

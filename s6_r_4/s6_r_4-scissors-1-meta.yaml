@@ -1,0 +1,18 @@
+# Gesture Recorder Meta File
+
+label: s6_r_4
+gesture: scissors
+index: 1
+
+date: 21/08/2020
+time: 06:02:18
+
+arm: 0
+arm_direction: 1
+rssi: -68
+battery_level: 96
+mirror_left_arm: True
+
+files:
+  - s6_r_4-scissors-1-orientation.csv
+  - s6_r_4-scissors-1-emg.csv

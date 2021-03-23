@@ -1,0 +1,18 @@
+# Gesture Recorder Meta File
+
+label: s7_r_3
+gesture: paper
+index: 7
+
+date: 19/08/2020
+time: 19:32:07
+
+arm: 0
+arm_direction: 1
+rssi: -69
+battery_level: 98
+mirror_left_arm: True
+
+files:
+  - s7_r_3-paper-7-orientation.csv
+  - s7_r_3-paper-7-emg.csv
