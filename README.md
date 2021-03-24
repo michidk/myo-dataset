@@ -3,6 +3,7 @@
 Myo dataset made for the reaseach presented in my paper about ["Person-Independent sEMG Gesture Recognition Using LSTM Networks for Human-Computer Interaction"](https://wiki.tum.de/display/infar/%5B19WS+-+GR%5D+Person-Independent+sEMG+Gesture+Recognition+Using+LSTM+Networks+for+Human-Computer+Interaction).
 
 This repository contains sEMG Data of 13 subjects recorded with the Myo Armband. Subjects were instructed to wear the armband on their dominant arm, like this:
+
 ![image](.github/images/myo-position.png)
 
 The gestures that were recorded, are the ones from the Rock, Paper, Scissors game:
