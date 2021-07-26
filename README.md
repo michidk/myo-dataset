@@ -59,7 +59,7 @@ files: # which data was recorded; e.g. pose data might miss, if no pose was dete
 In order to generate labeled data, a Python application
 interfacing with the Myo was implemented. The data is recorded while
 showing an icon and text label describing the gesture. Each gesture is
-recorded for two seconds following a $0.5$ second break where subjects
+recorded for two seconds following a 0.5 second break where subjects
 are supposed to relax their arm. The two-second time-span was chosen
 because several tests showed that it is the amount of time required for
 most persons to perform the transition from rest pose to the wanted
