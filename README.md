@@ -30,9 +30,9 @@ Each kind of data is stored in it's own file per recording.
 
 ## Meta Data
 
-Along with the raw EMG data that
+Each gesture recording comes with a meta data description file.
 
-Example along with explainatory comments:
+Example with explainatory comments:
 ```yaml
 label: s6_r_1 # same as the folder
 gesture: scissors # which gesture the user was told to record
