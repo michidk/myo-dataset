@@ -1,38 +1,41 @@
 # Myo Dataset
 
-Myo dataset made for the reaseach presented in my paper about ["Person-Independent sEMG Gesture Recognition Using LSTM Networks for Human-Computer Interaction"](https://wiki.tum.de/display/infar/%5B19WS+-+GR%5D+Person-Independent+sEMG+Gesture+Recognition+Using+LSTM+Networks+for+Human-Computer+Interaction).
+Myo dataset made for the research presented in my paper about ["Person-Independent sEMG Gesture Recognition Using LSTM Networks for Human-Computer Interaction"](https://wiki.tum.de/display/infar/%5B19WS+-+GR%5D+Person-Independent+sEMG+Gesture+Recognition+Using+LSTM+Networks+for+Human-Computer+Interaction).
 
 This repository contains sEMG Data of 13 subjects recorded with the Myo Armband. Subjects were instructed to wear the armband on their dominant arm, like this:
 
-![image](.github/images/myo-position.png)
+<p align="center"><img src=".github/images/myo-position.png" width="320" alt="Myo armband position on the forearm"></p>
 
 The gestures that were recorded, are the ones from the Rock, Paper, Scissors game:
 
-![Rock](.github/images/rock.png)
-![Paper](.github/images/paper.png)
-![Scissors](.github/images/scissors.png)
+<table align="center">
+  <tr><th align="center">Rock</th><th align="center">Paper</th><th align="center">Scissors</th></tr>
+  <tr><td align="center"><img src=".github/images/rock.png" width="160" alt="Rock gesture"></td><td align="center"><img src=".github/images/paper.png" width="160" alt="Paper gesture"></td><td align="center"><img src=".github/images/scissors.png" width="160" alt="Scissors gesture"></td></tr>
+</table>
+
+Browse the recordings in [`dataset/`](dataset/). Use the naming convention and file descriptions below to select a session and gesture.
 
 ## File Naming Convention
 
-Each recording was given it's own folder.
-The folder are named like this: `<subjectId>_<arm>_<index>` (also called the label)
+Each recording was given its own folder.
+The folders are named like this: `<subjectId>_<arm>_<index>` (also called the label)
 Where arm `r` stands for the right arm.
 
 ## Recorded Data
 
-Each kind of data is stored in it's own file per recording.
+Each kind of data is stored in its own file per recording.
 | File Ending | Description |
 | - | - |
 |`<label>-<gestureType>-<index>-emg.csv`|Raw EMG Data from the Myo armband of the eight sensors|
-|`<label>-<gestureType>-<index>-pose.csv`|Pose data (detected poses by the built-in Myo detecion)|`s6_r_1-paper-4-pose.csv`|
+|`<label>-<gestureType>-<index>-pose.csv`|Pose data (detected poses by the built-in Myo detection)|
 |`<label>-<gestureType>-<index>-orientation.csv`|IMU Orientation data|
-|`<label>-<gestureType>-<index>-meta.csv`|Meta Data (see below)|
+|`<label>-<gestureType>-<index>-meta.yaml`|Meta Data (see below)|
 
 ## Meta Data
 
 Each gesture recording comes with a meta data description file.
 
-Example with explainatory comments:
+Example with explanatory comments:
 ```yaml
 label: s6_r_1 # same as the folder
 gesture: scissors # which gesture the user was told to record
@@ -45,7 +48,7 @@ arm: 0 # arm 0 = right, arm 1 = left
 arm_direction: 1 # -1 if the armband was worn in reverse
 rssi: -53 # signal strength
 battery_level: 97 # 100 means full battery
-mirror_left_arm: True # wether the recording applicatin automatically mirror the data if the user was left handed
+mirror_left_arm: True # whether the recording application automatically mirror the data if the user was left handed
 
 files: # which data was recorded; e.g. pose data might miss, if no pose was detected
   - s6_r_1-scissors-8-pose.csv
@@ -100,10 +103,7 @@ gestures with their non-dominant arm. Also, differences in the data
 resulting from recording the left and right arm are non-existent since
 the current arm is detected, and the data mirrored accordingly.
 
-All data provided by the Myo armband is stored in multiple files labeled
-with a unique but randomized identifier. Each file contains roughly
-400 ± 5 entries since the recording took two seconds, and the data was
-sampled with. Each entry contains an index, a timestamp, and one value
-for each of the eight sensors. and other data along with
-meta-information (label, recording time, left or right arm, battery
-level, and connection quality) is stored in other files.
+Each recording stores EMG, orientation, pose, and metadata in separate files.
+EMG entries contain an index, a timestamp, and one value for each of the eight
+sensors. The metadata identifies the gesture, session, arm, battery level,
+and connection quality.
